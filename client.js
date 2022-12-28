@@ -13,7 +13,7 @@ const leetcode=(id)=>{
 
      }
 
-     ajax.open("GET","http://localhost:5000/leetcode?name="+element[id].getAttribute("name"));
+     ajax.open("GET","https://sanjeevapi.onrender.com/leetcode?name="+element[id].getAttribute("name"));
      ajax.send();
 }
 
@@ -32,7 +32,7 @@ const codechef=(id)=>{
 
      }
 
-     ajax.open("GET","http://localhost:5000/codechef?name="+element[id].getAttribute("name"));
+     ajax.open("GET","https://sanjeevapi.onrender.com/codechef?name="+element[id].getAttribute("name"));
      ajax.send();
 
 }
