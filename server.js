@@ -37,14 +37,13 @@ app.get("/codechef",(req,res)=>{
 
 });
 
-app.get("/hackerank",(req,res)=>{
 
-    axios.get("https://www.hackerrank.com/",headers).then((result)=>{
+
+app.get("/codeforce",(req,res)=>{
+
+    axios.get("https://codeforces.com/profile/"+req.query.name,headers).then((result)=>{
         res.send(result.data);
-    }).catch((err)=>{
-        res.send(err.message);
-    });
-
+    })
 })
 
 app.get("/codeCount",(req,res)=>{
